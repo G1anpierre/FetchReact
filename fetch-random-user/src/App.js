@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment} from 'react';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+         <h1 className="title"> Random User Generator</h1>
+            <div className="user-profile">
+                <img id="avatar" src="https://pbs.twimg.com/profile_images/743138182607175680/ZJzktgBk_400x400.jpg" />
+                <div id="fullname">Jon Snow</div>
+            <div id="username">
+                kingofnorth
+            </div>
+                <div className="description">
+                <div>Email: <span id="email">jon@hotmail.com</span></div>
+                <div>City: <span id="city">Winterfell</span></div>
+            </div>
+            <div className="footer">
+                <button id="btn">Next User!</button>
+            </div>
+            <div className="footer-2">
+                <button id="btn-user">My User!</button>
+            </div>
+        </div>
+    </Fragment>
   );
 }
 
