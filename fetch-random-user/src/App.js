@@ -2,6 +2,16 @@ import React, { Fragment} from 'react';
 
 import './App.css';
 
+
+
+
+
+
+
+
+
+
+
 class App extends React.Component {
 
   constructor (props) {
@@ -13,7 +23,20 @@ class App extends React.Component {
     }
 
   }
+
+
+
+
+  componentDidMount() {
+
+     this.fetchUser();
+  }
  
+  fetchUser = async () => {
+      const response = await fetch('https://randomuser.me/api/')
+      const data = response.json();
+      console.log(data);
+  }
 
   render() {
 
