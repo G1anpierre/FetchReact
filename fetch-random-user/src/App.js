@@ -3,15 +3,6 @@ import React, { Fragment} from 'react';
 import './App.css';
 
 
-
-
-
-
-
-
-
-
-
 class App extends React.Component {
 
   constructor (props) {
@@ -29,7 +20,6 @@ class App extends React.Component {
     }
 
   }
-
 
 
 
@@ -63,7 +53,7 @@ class App extends React.Component {
   }
 
 //   Optional : 
- 
+
 //   handleUser = () => {
 //     console.log('I have click')
 //     this.fetchUser();
